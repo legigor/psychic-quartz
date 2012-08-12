@@ -1,1 +1,7 @@
-﻿OK
+﻿@using WebUI.AppCode
+OK
+
+@foreach(var log in CommonLogger.Log)
+{
+    <div>@log</div>
+}
